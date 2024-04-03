@@ -28,7 +28,13 @@ If we use promise structure without syntactic sugar, we catch the error in then 
 If we are using xhr, we can do error handling from status code
 */
 
-// 3 -
+// 3 - This case
+
+// 4 - This
+
+function checkPalindrome(string) {
+  return string == string.split("").reverse().join("");
+}
 
 // 5 - Explain the difference between 'undefined' and 'null' in JavaScript and when to use each.
 
