@@ -28,9 +28,24 @@ If we use promise structure without syntactic sugar, we catch the error in then 
 If we are using xhr, we can do error handling from status code
 */
 
-// 3 - This case
+// 3 - Factorial case
 
-// 4 - This
+function findFactorial(num) {
+  if (num < 0) {
+    console.log("Error");
+  } else if (num === 0) {
+    console.log(`The factorial of ${num} is 1.`);
+  } else {
+    let fact = 1;
+
+    for (i = 1; i <= num; i++) {
+      fact *= i;
+    }
+    console.log(`The factorial of ${num} is ${fact}.`);
+  }
+}
+
+// 4 - it's a palindrome question :)
 
 function checkPalindrome(string) {
   return string == string.split("").reverse().join("");
